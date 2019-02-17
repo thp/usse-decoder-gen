@@ -1,5 +1,4 @@
 VMOV:
-    handler: vmov
     members:
         - op1: '00111'
         - predicate:
@@ -39,7 +38,6 @@ VMOV:
         - src1: 6
         - src2: 6
 VMADSI:
-    handler: vmadsi
     members:
         - opcode1: '00011'
         - predicate:
@@ -79,7 +77,6 @@ VMADSI:
         - src0_swizz: 4
         - src0_n: 6
 VMAD4:
-    handler: vmad4
     members:
         - opcode1: '00000'
         - f16: 1
@@ -114,7 +111,6 @@ VMAD4:
         - src1_n: 6
         - src2_n: 6
 PHAS:
-    handler: special_phas
     members:
         - op1: '11111'
         - phas:
@@ -122,7 +118,6 @@ PHAS:
             offset: 52
             count: 3
 SPEC:
-    handler: special
     members:
         - op1: '11111'
         - special:
